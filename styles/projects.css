@@ -1,0 +1,80 @@
+#projects {
+    display: flex;
+    flex-direction: column;
+    width: 1366px;
+    height: 917px;
+    background-color: var(--gray-500);
+    gap: 56px;
+    /* padding: 0px 120px 144px 120px; */
+    align-items: center;
+
+    .header {
+        display: flex;
+        flex-direction: column;
+        padding-top: 88px;
+        width: 1040px;
+        gap: 8px;
+        text-align: center;
+    }
+    .header h2 {
+        font: var(--subtitle);
+        color: var(--color-red);
+    }
+    .header p {
+        font: var(--title-md);
+        color: var(--gray-100);
+    }
+
+    .grid{
+        display: flex;
+        gap: 24px;
+        width: 1040px;
+        height: 584px;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-bottom: 120px;
+        
+        .projectCard{
+            display: flex;
+            flex-direction: column;
+            width: 330px;
+            height: 280px;
+            align-items: center;
+            background: var(--gray-400);
+            border-radius: 8px;
+            gap: 16px;
+            padding-block: 16px;
+            padding-inline: 16px;
+            cursor: pointer;
+
+
+            &:hover{
+                border: 2px solid var(--gray-300);
+            }
+
+            img{
+                display: flex;
+                align-items: center;
+                width: 306px;
+                height: 156px;
+                border-radius: 8px;
+                object-fit: cover;
+            }
+
+            .text{
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+
+                h2{
+                    color: var(--gray-100);
+                }
+
+                p{
+                    color: var(--gray-200);
+                }
+            }
+        }
+
+    }
+}
